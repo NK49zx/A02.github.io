@@ -3,15 +3,14 @@ body {
     font-style: normal;
     background-color: #f4f4f4;
     margin: 0 auto;
-    margin-left: 5%;
-    margin-right: 5%;
-
+    justify-self: center;
+    max-width: 1440px;
+    max-height: 3092px;
 }
 
 header {
-    max-width: 1440px;
-    width: 1160px;
-    height: 62px;
+    width: 80%;
+    height: 5%;
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -20,12 +19,11 @@ header {
     justify-items: center;
     
 }
-.logo{
+.logo, .top-navbar{
     display: flex;
 }
-.top-navbar{
- display: flex;
-
+.ham{
+    display: none;
 }
 .ul-nav{
     display: flex;  
@@ -42,11 +40,11 @@ header {
     text-decoration: none;
 }
 .btn-1{
-    width: 197px;
-    height: 50px;
+    width: 8em;
+    height: 2.25em;
     padding: 10px 10px 10px 10px;
     border-radius: 0.5em;
-    font-size: 20px;
+    font-size: 1.25em;
     font-weight: 400;
     background-color: orange;
     color: #f4f4f4;
@@ -54,25 +52,62 @@ header {
 }
 .banner{
     display: flex;
-    width: 1159px;
-    height: 575px;
+    width: 80%;
+    height: 35%;
     justify-self: center;
     align-items: center;
     gap: 2em;
 }
+
+
 .ban-header{
-    font-size: 56px;
+    font-size: 3.5em;
     font-weight: bold;
-    line-height: 61px;
+    line-height: 1.25em;
 }
 .btn-2{
-    width: 197px;
-    height: 50px;
+    width: 8em;
+    height: 2.25em;
     padding: 10px 10px 10px 10px;
     border-radius: 0.5em;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: 400;
     background-color: black;
     color: #f4f4f4;
     border-style: none;
+}
+@media screen and (max-width: 391px) {
+    body{
+        align-items: center;
+        margin: 0 auto;
+    }
+    header {
+        max-width: 390px;
+        align-items: center;
+    }
+
+    .logo-h2, .top-navbar, .btn-1{
+        display: none;
+    }
+    .ham{
+        display: flex;
+        width: 1.9em;
+        height: 1.9em;
+    }
+
+    .banner{
+        flex-direction: column-reverse;
+        padding-top: 20px;
+        padding-bottom: 20px 
+    }
+    .ban-png{
+        width: 337px;
+        height: 413px;
+    }
+    .banner-content{
+        text-align: center;
+    }
+    .ban-header{
+        font-size: 2em;
+    }
 }
