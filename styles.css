@@ -1,0 +1,78 @@
+body {
+    font-family: "Fira Sans", serif;
+    font-style: normal;
+    background-color: #f4f4f4;
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+header {
+    max-width: 1440px;
+    width: 1160px;
+    height: 62px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    
+}
+.logo{
+    display: flex;
+}
+.top-navbar{
+ display: flex;
+
+}
+.ul-nav{
+    display: flex;  
+    list-style: none;
+    padding: 0%;
+    gap: 1.5em; 
+    
+}
+.li-nav a {
+    text-decoration: none;
+}
+
+.li-nav a {
+    text-decoration: none;
+}
+.btn-1{
+    width: 197px;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0.5em;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: orange;
+    color: #f4f4f4;
+    border-style: none;
+}
+.banner{
+    display: flex;
+    width: 1159px;
+    height: 575px;
+    justify-self: center;
+    align-items: center;
+    gap: 2em;
+}
+.ban-header{
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 61px;
+}
+.btn-2{
+    width: 197px;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 0.5em;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: black;
+    color: #f4f4f4;
+    border-style: none;
+}
