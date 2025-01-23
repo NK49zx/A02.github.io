@@ -76,6 +76,56 @@ header {
     color: #f4f4f4;
     border-style: none;
 }
+.curriculum{
+    justify-items: center;
+    margin-top: 5%;
+}
+.cur-png{
+    height: 2.5em;
+    width: 2.5em;
+    background-color: orange;
+    border-radius: 100%;
+    padding: 1em;
+}
+.cards{
+    display:flex;
+    height: 50%;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    gap: 2em;
+
+}
+.card-1{
+    width: 90%;
+    height: 20em;
+    padding: 20px 20px 20px 20px;
+    background-color: lightblue;
+    border-radius: 0.5em;
+    justify-items: center;
+    place-content: center;
+    border: 1px solid rgb(46, 177, 220);
+}
+.card-2{
+    width: 90%;
+    height: 20em;
+    padding: 20px 20px 20px 20px;
+    background-color: lightgoldenrodyellow;
+    border-radius: 0.5em;
+    justify-items: center;
+    place-content: center;
+    border: 1px solid rgb(220, 208, 46);
+}
+.card-3{
+    width: 90%;
+    height: 20em;
+    padding: 20px 20px 20px 20px;
+    background-color: lightpink;
+    border-radius: 0.5em;
+    justify-items: center;
+    place-content: center;
+    border: 1px solid rgb(220, 46, 185);
+}
 @media screen and (max-width: 391px) {
     body{
         align-items: center;
@@ -109,5 +159,12 @@ header {
     }
     .ban-header{
         font-size: 2em;
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .arrow{
+        display: none;
     }
 }
