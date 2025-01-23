@@ -36,9 +36,6 @@ header {
     text-decoration: none;
 }
 
-.li-nav a {
-    text-decoration: none;
-}
 .btn-1{
     width: 8em;
     height: 2.25em;
@@ -49,6 +46,33 @@ header {
     background-color: orange;
     color: #f4f4f4;
     border-style: none;
+}
+.marquee {
+    width: 100%;
+    position: relative;
+    white-space: nowrap;
+    height: 2em;
+    background-color: white;
+}
+
+.marquee div {
+    display: inline-block;
+    position: absolute;
+    animation: scroll-horizontal 10s linear infinite;
+}
+
+@keyframes scroll-horizontal {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
+}
+.btn-1:hover{
+
+    background-color: orange;
+    color: black;
 }
 .banner{
     display: flex;
@@ -75,10 +99,14 @@ header {
     background-color: black;
     color: #f4f4f4;
     border-style: none;
+    margin-bottom: 10%;
 }
 .curriculum{
     justify-items: center;
     margin-top: 5%;
+    background-image: url(assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .cur-png{
     height: 2.5em;
@@ -86,6 +114,10 @@ header {
     background-color: orange;
     border-radius: 100%;
     padding: 1em;
+}
+.cur-png:hover{
+    height: 3em;
+    width: 3em;
 }
 .cards{
     display:flex;
@@ -100,7 +132,7 @@ header {
     width: 90%;
     height: 20em;
     padding: 20px 20px 20px 20px;
-    background-color: lightblue;
+    background-image: linear-gradient(to top, white 70%, rgb(0, 225, 250));
     border-radius: 0.5em;
     justify-items: center;
     place-content: center;
@@ -110,7 +142,8 @@ header {
     width: 90%;
     height: 20em;
     padding: 20px 20px 20px 20px;
-    background-color: lightgoldenrodyellow;
+    background-color: orange;
+    background-image: linear-gradient(to top, white 70%, rgb(250,165,0,1));
     border-radius: 0.5em;
     justify-items: center;
     place-content: center;
@@ -120,16 +153,145 @@ header {
     width: 90%;
     height: 20em;
     padding: 20px 20px 20px 20px;
-    background-color: lightpink;
+    background-image: linear-gradient(to top, white 70%, rgb(189, 107, 205));
     border-radius: 0.5em;
     justify-items: center;
     place-content: center;
     border: 1px solid rgb(220, 46, 185);
 }
+.f-png{
+    height: 80em;
+}
+.bg{
+    justify-items: center;
+    margin-top: 5%;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgb(252, 250, 250, 0) 60%, rgb(250,165,0,1));
+}
+.story{
+    background-image: url(assets/bg.png);
+}
+.grid-div{
+    display: flex;
+    gap: 1em;
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.st-grid-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+.grid-txt-1{
+    background-color: white;
+    padding: 15px;
+    border-radius: 0em 0em 1em 1em;
+    position: relative;
+    height: 20.25em;
+    width: 31.87em;
+}
+.stry-p-1{
+    margin-top: 10% ;
+    line-height: 2em;
+}
+.stry-png-1{
+    border-radius: 1em 1em 0em 0em;
+}
+.stry-2, .stry-3, .stry-4, .stry-5{
+    width: 18em;
+    border-radius: 1em;
+    align-items: center;
+}
+.grid-txt{
+    background-color: white;
+    padding: 15px;
+    border-radius: 0em 0em 1em 1em;
+    position: relative;
+    height: 8em;
+    
+}
+
+.btn-3{
+    width: 11em;
+    height: 2.25em;
+    padding: 5px 5px 5px 5px;
+    border-radius: 2em;
+    font-size: 0.8em;
+    font-weight: 400;
+    background-color: #95B226;
+    color: #f4f4f4;
+    border-style: none;
+    position: absolute;
+    top: -1.5em;
+}
+.btn-4{
+    width: 11em;
+    height: 2.25em;
+    padding: 5px 5px 5px 5px;
+    border-radius: 2em;
+    font-size: 1em;
+    font-weight: 400;
+    background-color: #3CD8E8;
+    color: #f4f4f4;
+    border-style: none;
+    position: absolute;
+    top: -1.5em;
+}
+.stry-png{
+    width: 18em;
+    height: 11em;
+    border-radius: 1em 1em 0em 0em;
+
+}
+footer{
+    background-color: #01ACFD;
+    height: 20em;
+}
+.ft{ 
+    height: 15em;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4em;
+}
+.sec-1{
+    width: 20em;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.ft-1{
+    display: flex;
+    width: 18em;
+}
+.logo2-h2{
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 2.1em;
+    padding-top: 15px;
+}
+.ft-nav{
+    display: flex;
+    flex-direction: column;  
+    list-style: none;
+    padding: 0%;
+    gap: 1em; 
+    
+}
+.li-nav a {
+    text-decoration: none;
+}
+.ft-img{
+    display: flex;
+    gap: 0.5em;
+}
+
 @media screen and (max-width: 391px) {
     body{
         align-items: center;
         margin: 0 auto;
+        justify-self: center;
     }
     header {
         max-width: 390px;
@@ -166,5 +328,24 @@ header {
     }
     .arrow{
         display: none;
+    }
+    .st-grid{
+        display: none;
+    }
+    .stry-2, .stry-3, .stry-4, .stry-5{
+        width: 10em;
+    }
+    .stry-png{
+        width: 10em;
+    
+    }
+    .ft{
+        flex-direction: column;
+    }
+    footer{
+        margin-top: 5%;
+        background-color: #01ACFD;
+        height: 40em;
+        width: 25em;
     }
 }
